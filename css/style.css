@@ -1095,6 +1095,7 @@ img {
   padding-right: 0.6em;
   font-weight: 400;
   line-height: 1.375em;
+  cursor: pointer;
 }
 .field-checkbox__name-text {
   font-size: 18px;
@@ -1177,6 +1178,7 @@ input:checked ~ .field-checkbox__name-text::before {
   padding-right: 0.6em;
   font-weight: 400;
   line-height: 1.375em;
+  cursor: pointer;
 }
 .field-radio__name-text {
   font-size: 18px;
@@ -2265,7 +2267,7 @@ input:checked ~ .field-radio__name-text::after {
   .main-nav__item:first-of-type {
     margin-left: 320px;
   }
-  .main-nav__item--active a:hover::after {
+  .main-nav__item--active a::after {
     height: 2px;
     content: '';
     position: absolute;
@@ -2274,14 +2276,20 @@ input:checked ~ .field-radio__name-text::after {
     bottom: 10px;
     background-color: #d22856;
   }
-  .main-nav__item--active a:hover {
+  .main-nav__item--active a {
     color: #d22856;
   }
   .main-nav__item--active a:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: #d22856;
   }
   .main-nav__item--active a:active::after {
-    display: none;
+    height: 2px;
+    content: '';
+    position: absolute;
+    left: 21px;
+    right: 21px;
+    bottom: 10px;
+    background-color: #d22856;
   }
   .downloads {
     margin-left: 130px;

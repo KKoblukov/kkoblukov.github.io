@@ -2670,6 +2670,9 @@ input:checked ~ .field-radio__name-text::after {
   .adventages__image-wrapper {
     display: none;
   }
+  .main-nav__item--active a {
+    color: #d22856;
+  }
   .adventages__item:last-of-type .adventages__image-wrapper {
     display: block;
   }
